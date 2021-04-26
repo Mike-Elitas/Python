@@ -10,9 +10,18 @@ class Character:
         self.hp = hp
         self.techniques = techniques
 
+    def getName(self):
+        print (self.name)
+
+    def getHp(self):
+        print (self.hp)
+
+    def getTechniques(self):
+        for x in self.techniques:
+            Technique.viewTechnique(x)
+
     def viewCharacter(self):
         print ("El personaje: " + self.name)
         print ("La vida: " + str(self.hp))
         print (" ")
-        for x in self.techniques:
-            Technique.viewTechnique(x)
+        self.getTechniques()
