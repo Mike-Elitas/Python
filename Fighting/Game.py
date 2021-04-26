@@ -18,9 +18,9 @@ def displayCharacter(characters):
     # if lock == 1:
     #     startGame
 
-
+i=0
 for x in characters:
-    print (str(n) + ". " + x.name)
-
+    print (str(i) + ". " + x.name)
+    i=i+1
 
 
