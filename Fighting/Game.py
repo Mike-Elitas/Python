@@ -10,18 +10,22 @@ c2 = Character("Big Chungus", 700, [t1, t3])
 characters = [c1, c2]
 
 
-def charSelect():
+def champSelect():
     i = 1
     for x in characters:
         print (str(i) + ". " + x.name)
         i = i + 1
+    champ = input("Selecciona un personaje: ")
+    print (" ")
+    if champ == 1:
+        Character.viewCharacter(characters[champ-1])
     # Character.viewCharacter(c1)
     # lock = input("Pulsa 1 para fijar el personaje u otra tecla para volver a la selccion: ")
     # if lock == 1:
     #     startGame
 
 
-charSelect()
+champSelect()
 
 # def startGame():
 #     # while c1.hp != 0 & c2.hp != 0:
