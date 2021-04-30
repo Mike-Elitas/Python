@@ -1,7 +1,7 @@
 from Fighting.Techniques import Technique
 from Fighting.Characters import Character
 
-t1 = Technique("Auto Atack", 50, 1)
+t1 = Technique("Auto Attack", 50, 1)
 t2 = Technique("Hasaki", 80, 4)
 t3 = Technique("Body Slam", 140, 6)
 c1 = Character("El Moreno", 500, [t1, t2])

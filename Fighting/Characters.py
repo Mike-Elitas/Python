@@ -17,7 +17,11 @@ class Character:
         return (self.hp)
 
     def getTechniques(self):
+        i = 1
+        print ("Habilidades:")
         for x in self.techniques:
+            print(str(i) + ". " + Technique.getName(x))
+            i = i+1
             Technique.viewTechnique(x)
 
     def viewCharacter(self):

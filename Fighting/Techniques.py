@@ -18,7 +18,7 @@ class Technique:
         self.cd = cd
 
     def viewTechnique(self):
-        print ("La tecnica: " + self.getName())
+        print ("Tecnica: " + self.getName())
         print ("DMG: " + str(self.getDmg()))
         print ("Cooldown: " + str(self.getCd()))
         print (" ")
