@@ -23,7 +23,7 @@ class Technique:
     # Constructor necesario para usar las tecnicas en el juego
     def __init__(self, name, tipo, dmg, cd):
         self.name = name
-        self.tipo = name
+        self.tipo = tipo
         self.dmg = dmg
         self.cd = cd
     # Visualiza la informacion de la tecnica con formato
