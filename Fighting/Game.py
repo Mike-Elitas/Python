@@ -1,7 +1,7 @@
-from Fighting.Techniques import Technique
-from Fighting.Characters import Character
+from Techniques import Technique
+from Characters import Character
 import random
-# Instanciación de tecnicas y personajes
+# Instanciacion de tecnicas y personajes
 t1 = Technique("Mordida", "Fisico", 50, 1)
 
 t2 = Technique("Patadas", "Fisico", 80, 4)
@@ -54,15 +54,15 @@ characters = [c1, c2, c3, c4]
 
 def menu():
     # Menu de inicio
-    menuInicio = input("------------------------------------------------ \n"
+    menuInicio = int(input("------------------------------------------------ \n"
                        "Bienvenido a Soul Reaper V, entra a la batalla: \n"
                        "------------------------------------------------ \n"
                        "1. Jugar\n"
                        "2. Salir\n"
-                       "------------------------------------------------ \n")
-    if menuInicio == "1":
+                       "------------------------------------------------ \n"))
+    if menuInicio == 1:
         champSelect()
-    elif menuInicio == "2":
+    elif menuInicio == 2:
         exit()
     else:
         # Si se introduce un valor incorrecto redirige al menu inicial
@@ -73,7 +73,7 @@ def menu():
 
 
 def display(champ):
-    # Muestra la información de los personajes en la pantalla de selección
+    # Muestra la informacion de los personajes en la pantalla de seleccion
     Character.viewCharacter(characters[champ - 1])
     currentChamp = (characters[champ - 1])
     lock(currentChamp)
@@ -197,14 +197,14 @@ def startGame(player, com):
 
 
 def impact(atk, fighter1, fighter2):
-    # Comprobacion de que la habilidad usada no este en Cooldown/Mensajes y calculos de daño player
+    # Comprobacion de que la habilidad usada no este en Cooldown/Mensajes y calculos de dano player
     if Technique.getCurrentCd(fighter1.techniques[atk-1]) > 0:
         print( "\n" +  fighter1.getName() + " descansa un turno porque esta habilidad esta en cooldown...\n")
     else:
         fighter2.setHp(fighter2.getHp() - Technique.getDmg(fighter1.techniques[atk-1]))
         Technique.setCurrentCd(fighter1.techniques[atk-1], Technique.getCd(fighter1.techniques[atk-1]))
         print("\n" "-------------------------------- \n" + fighter1.getName() + " usa " + Technique.getName(fighter1.techniques[atk-1]) + "\n")
-    # Comprobacion de que la habilidad usada no este en Cooldown/Mensajes y calculos de daño com + generacion de ataque aleatorio
+    # Comprobacion de que la habilidad usada no este en Cooldown/Mensajes y calculos de dano com + generacion de ataque aleatorio
     rand = random.randint(0, len(fighter2.techniques)-1)
     if Technique.getCurrentCd(fighter2.techniques[rand]) > 0:
         print(fighter2.getName() + " descansa un turno porque esta habilidad esta en cooldown...\n")

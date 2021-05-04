@@ -1,5 +1,5 @@
 class Technique:
-    # Inicialización de variables
+    # Inicializacion de variables
     name = ""
     tipo = ""
     dmg = 0

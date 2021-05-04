@@ -1,7 +1,7 @@
 from Techniques import Technique
 
 class Character:
-    # Inicialización de variables
+    # Inicializacion de variables
     name = ""
     hp = 0
     descripcion = ""
