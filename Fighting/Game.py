@@ -1,6 +1,7 @@
 from Techniques import Technique
 from Characters import Character
 import random
+
 # Instanciacion de tecnicas y personajes
 t1 = Technique("Mordida", "Fisico", 50, 1)
 
@@ -10,7 +11,7 @@ t3 = Technique("Body Slam", "Fisico", 140, 6)
 
 t4 = Technique("Bomba Infierno", "Especial", 40, 1)
 
-t5 = Technique("Patada Giro Ignea", "Fisico / Especial",  65, 2)
+t5 = Technique("Patada Giro Ignea", "Fisico / Especial", 65, 2)
 
 t6 = Technique("Llamarada Tsunami", "Fuego", 100, 5)
 
@@ -26,57 +27,62 @@ t11 = Technique("Arrojadizo", "Arma", 65, 2)
 
 t12 = Technique("Disparo Certero", "Arma", 120, 5)
 
-c1 = Character("Sargento", 550, "Era un soldado del ejercito de Estados Unidos al que le toco luchar por su patria en Iran, lo capturaron los enemigos \n"
-                    "lo torturaron para sacar informacion sobre las estrategias, armas, numero de hombres que llevaba su ejercito pero el no dijo nada \n"
-                    "asi que le siguieron torturando hasta que un dia, al limite de la muerte, su cuerpo empezo a desarrollar una resistencia, fueza y punteria \n"
-                    "sobrehumana a los golpes, cortes, ahogamientos, privaciones del descanso y en el momento en el que le dejaron solo se desato y salio \n"
-                    "matando a los hombres que vigilaban la puerta con sus propias manos y con la ayuda de un arma consiguio escapar de la lineas enemigas. \n", [t10, t11, t12])
+c1 = Character("Sargento", 550,
+               "Era un soldado del ejercito de Estados Unidos al que le toco luchar por su patria en Iran, lo capturaron los enemigos \n"
+               "lo torturaron para sacar informacion sobre las estrategias, armas, numero de hombres que llevaba su ejercito pero el no dijo nada \n"
+               "asi que le siguieron torturando hasta que un dia, al limite de la muerte, su cuerpo empezo a desarrollar una resistencia, fueza y punteria \n"
+               "sobrehumana a los golpes, cortes, ahogamientos, privaciones del descanso y en el momento en el que le dejaron solo se desato y salio \n"
+               "matando a los hombres que vigilaban la puerta con sus propias manos y con la ayuda de un arma consiguio escapar de la lineas enemigas. \n",
+               [t10, t11, t12])
 
-c2 = Character("Big Chungus", 700, "Big Chungus, antes conocido como Bugs Bunny, le despidieron de su trabajo y a raiz de eso se abandono y se dio a la comida basura, \n"
-                      "la vida sedentaria, entonces engordo, pero eso no era ningun obstaculo para meterse en peleas ya que por su peso tenia mucha fuerza.",  [t1, t2, t3])
+c2 = Character("Big Chungus", 700,
+               "Big Chungus, antes conocido como Bugs Bunny, le despidieron de su trabajo y a raiz de eso se abandono y se dio a la comida basura, \n"
+               "la vida sedentaria, entonces engordo, pero eso no era ningun obstaculo para meterse en peleas ya que por su peso tenia mucha fuerza.",
+               [t1, t2, t3])
 
-c3 = Character("Magma", 500, "Magma era una chica de 15 llamada Carolina, a esa edad su casa se incencdio y sus padres murieron ella al ver que se iba a quedar sola \n"
-                  "no se molesto en salir de aquella casa en llamas, quiso morir con lo que mas queria, sus padres. Quedo inconsciente por el humo y lo que \n"
-                  "ella penso que era el final, acabo siendo el principio de una larga y compleja historia, desperto a los dos dias en el hospital de su ciudad \n"
-                  "sin a penas una quemadura, los medicos no se lo creian. Lo que Carolina iba a descubrir mas tarde es que aquel dia en el incendio absorbio \n"
-                  "todas las llamas que tocaron su cuerpo y obtuvo los superpoderes de fuego que a dia de hoy usa contra sus rivales.", [t4, t5, t6])
+c3 = Character("Magma", 500,
+               "Magma era una chica de 15 llamada Carolina, a esa edad su casa se incencdio y sus padres murieron ella al ver que se iba a quedar sola \n"
+               "no se molesto en salir de aquella casa en llamas, quiso morir con lo que mas queria, sus padres. Quedo inconsciente por el humo y lo que \n"
+               "ella penso que era el final, acabo siendo el principio de una larga y compleja historia, desperto a los dos dias en el hospital de su ciudad \n"
+               "sin a penas una quemadura, los medicos no se lo creian. Lo que Carolina iba a descubrir mas tarde es que aquel dia en el incendio absorbio \n"
+               "todas las llamas que tocaron su cuerpo y obtuvo los superpoderes de fuego que a dia de hoy usa contra sus rivales.",
+               [t4, t5, t6])
 
-c4 = Character("Dr. Radiactivo", 650, "El Dr. Garcia era un doctor de un hospital especializado en la cura del cancer, que, como muchos otros se dedicaba a \n"
-                  "la investigacion de la cura, pero lo suyo era personal, habia perdido dos personas cercanas. Por culpa de esa enfermedad, \n"
-                  "se quedaba horas extras en el laboratorio haciendo pruebas, relizando mezclas... Un dia el doctor se empezo a encontrar mal, \n"
-                  "a las semana le diagnosticaron esa enfermedad que tanto males le habia creado. Tenia un supuesto remedio no probado por ningun \n"
-                  "ser vivo, era una mezcla de muchos quimicos que por separado reducian los efectos de la enfermedad, el decidio juntarlos y probarlos con \n"
-                  "si mismo. Cayo en coma del cual desperto a los meses, ya curado y con unas habilidades no humanas...", [t7, t8, t9] )
+c4 = Character("Dr. Radiactivo", 650,
+               "El Dr. Garcia era un doctor de un hospital especializado en la cura del cancer, que, como muchos otros se dedicaba a \n"
+               "la investigacion de la cura, pero lo suyo era personal, habia perdido dos personas cercanas. Por culpa de esa enfermedad, \n"
+               "se quedaba horas extras en el laboratorio haciendo pruebas, relizando mezclas... Un dia el doctor se empezo a encontrar mal, \n"
+               "a las semana le diagnosticaron esa enfermedad que tanto males le habia creado. Tenia un supuesto remedio no probado por ningun \n"
+               "ser vivo, era una mezcla de muchos quimicos que por separado reducian los efectos de la enfermedad, el decidio juntarlos y probarlos con \n"
+               "si mismo. Cayo en coma del cual desperto a los meses, ya curado y con unas habilidades no humanas...",
+               [t7, t8, t9])
 
 # Guardamos los personajes en un array para acceder facilmente
 characters = [c1, c2, c3, c4]
 
 
+def error():
+    print("------------------------------------------------ \n"
+          "Por favor escoja una opcion valida: \n"
+          "------------------------------------------------")
+
 def menu():
     # Menu de inicio
     menuInicio = int(input("------------------------------------------------ \n"
-                       "Bienvenido a Soul Reaper V, entra a la batalla: \n"
-                       "------------------------------------------------ \n"
-                       "1. Jugar\n"
-                       "2. Salir\n"
-                       "------------------------------------------------ \n"))
+                           "Bienvenido a Soul Reaper V, entra a la batalla: \n"
+                           "------------------------------------------------ \n"
+                           "1. Jugar\n"
+                           "2. Salir\n"
+                           "------------------------------------------------ \n"))
     if menuInicio == 1:
         champSelect()
     elif menuInicio == 2:
         exit()
     else:
         # Si se introduce un valor incorrecto redirige al menu inicial
-        print("------------------------------------------------ \n"
-              "Por favor escoja una opcion valida: \n"
-              "------------------------------------------------")
+        error()
         menu()
 
-
-def display(champ):
-    # Muestra la informacion de los personajes en la pantalla de seleccion
-    Character.viewCharacter(characters[champ - 1])
-    currentChamp = (characters[champ - 1])
-    lock(currentChamp)
 
 
 def champSelect():
@@ -105,16 +111,20 @@ def champSelect():
 
     else:
         # Si se introduce un valor incorrecto redirige al menu inicial
-        print("------------------------------------------------ \n"
-              "Por favor escoja una opcion valida: \n"
-              "------------------------------------------------")
+        error()
         menu()
 
+
+def display(champ):
+    # Muestra la informacion de los personajes en la pantalla de seleccion
+    Character.viewCharacter(characters[champ - 1])
+    currentChamp = (characters[champ - 1])
+    lock(currentChamp)
 
 
 def lock(currentChamp):
     lock = int(input("\n---------------------------------------------------------------------------------"
-        "\nPulsa 1 para fijar el personaje u otro numero para volver a la selccion: \n"
+                     "\nPulsa 1 para fijar el personaje u otro numero para volver a la selccion: \n"
                      "--------------------------------------------------------------------------------- \n"))
     if lock == 1:
         # Fija el personaje del usuario y genera un rival aleatorio de entre los demas
@@ -165,7 +175,7 @@ def startGame(player, com):
         # Bucles que actualizan el cooldown de todas la habilidades
         for x in player.techniques:
             if Technique.getCurrentCd(x) > 0:
-                x.setCurrentCd(Technique.getCurrentCd(x)-1)
+                x.setCurrentCd(Technique.getCurrentCd(x) - 1)
         for x in com.techniques:
             if Technique.getCurrentCd(x) > 0:
                 x.setCurrentCd(Technique.getCurrentCd(x) - 1)
@@ -198,20 +208,24 @@ def startGame(player, com):
 
 def impact(atk, fighter1, fighter2):
     # Comprobacion de que la habilidad usada no este en Cooldown/Mensajes y calculos de dano player
-    if Technique.getCurrentCd(fighter1.techniques[atk-1]) > 0:
-        print( "\n" +  fighter1.getName() + " descansa un turno porque esta habilidad esta en cooldown...\n")
+    if Technique.getCurrentCd(fighter1.techniques[atk - 1]) > 0:
+        print("\n" + fighter1.getName() + " descansa un turno porque esta habilidad esta en cooldown...\n")
     else:
-        fighter2.setHp(fighter2.getHp() - Technique.getDmg(fighter1.techniques[atk-1]))
-        Technique.setCurrentCd(fighter1.techniques[atk-1], Technique.getCd(fighter1.techniques[atk-1]))
-        print("\n" "-------------------------------- \n" + fighter1.getName() + " usa " + Technique.getName(fighter1.techniques[atk-1]) + "\n")
+        fighter2.setHp(fighter2.getHp() - Technique.getDmg(fighter1.techniques[atk - 1]))
+        Technique.setCurrentCd(fighter1.techniques[atk - 1], Technique.getCd(fighter1.techniques[atk - 1]))
+        print("\n" "-------------------------------- \n" + fighter1.getName() + " usa " + Technique.getName(
+            fighter1.techniques[atk - 1]) + "\n")
     # Comprobacion de que la habilidad usada no este en Cooldown/Mensajes y calculos de dano com + generacion de ataque aleatorio
-    rand = random.randint(0, len(fighter2.techniques)-1)
+    rand = random.randint(0, len(fighter2.techniques) - 1)
     if Technique.getCurrentCd(fighter2.techniques[rand]) > 0:
         print(fighter2.getName() + " descansa un turno porque esta habilidad esta en cooldown...\n")
     else:
         fighter1.setHp(fighter1.getHp() - Technique.getDmg(fighter2.techniques[rand]))
         Technique.setCurrentCd(fighter2.techniques[rand], Technique.getCd(fighter2.techniques[rand]))
-        print(fighter2.getName() + " usa " + Technique.getName(fighter2.techniques[rand]) + "\n" "-------------------------------- \n")
+        print(fighter2.getName() + " usa " + Technique.getName(
+            fighter2.techniques[rand]) + "\n" "-------------------------------- \n")
     input("Pulsa Enter para continuar. \n")
+
+
 # Inicializacion del menu del juego
 menu()

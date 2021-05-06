@@ -12,6 +12,9 @@ class Technique:
     def getDmg(self):
         return self.dmg
 
+    def getTipo(self):
+        return self.tipo
+
     def getCd(self):
         return self.cd
 
@@ -29,7 +32,7 @@ class Technique:
     # Visualiza la informacion de la tecnica con formato
     def viewTechnique(self):
         print("Tecnica: " + self.getName())
-        print("Tipo: " + self.tipo)
+        print("Tipo: " + self.getTipo())
         print("DMG: " + str(self.getDmg()))
         print("Cooldown: " + str(self.getCd()))
         print("---------------------------")

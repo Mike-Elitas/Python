@@ -22,6 +22,8 @@ class Character:
 
     def getMaxHp(self):
         return self.maxHp
+    def getDescripcion(self):
+        return self.descripcion
 
     def getHp(self):
         return(self.hp)
@@ -40,9 +42,9 @@ class Character:
             Technique.viewTechnique(x)
     # Visualizador de la informacion de usuario, usado en el meni
     def viewCharacter(self):
-        print(self.name + ":")
-        print("HP: " + str(self.maxHp))
-        print("Historia: " + self.descripcion)
+        print(self.getName() + ":")
+        print("HP: " + str(self.getMaxHp()))
+        print("Historia: " + self.getDescripcion())
         print(" ")
         self.getTechniques()
     # Visualizador de tecnicas con el formato de combate
